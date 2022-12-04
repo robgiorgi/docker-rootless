@@ -1,7 +1,7 @@
 #!/bin/bash
 ##########################################################################
 # docker-sysinit.sh - Installation script for Rootless Docker (system side)
-# Copyright (c) Roberto Giorgi 2015/06/04 - FREE SOFTWARE: MIT LICENSE
+# Copyright (c) Roberto Giorgi 2022-12-03 - FREE SOFTWARE: MIT LICENSE
 # University of Siena, Italy
 ##########################################################################
 # MIT LICENSE:
