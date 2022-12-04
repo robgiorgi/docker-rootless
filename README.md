@@ -25,3 +25,5 @@ Please note that these two scripts are in a 'beta' version. They have been teste
 - `Ubuntu 16.04` 
 
 You are welcome to improve these scripts! :-)
+For further documentation I recommend the official Docker documentation:
+- https://docs.docker.com/engine/security/rootless/
