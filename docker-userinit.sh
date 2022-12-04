@@ -89,6 +89,7 @@ echo "  ...done"
 echo "* Adding DOCKER_HOST to .bashrc"
 linetoadd="export DOCKER_HOST=unix:///run/user/\$(id -u)/docker.sock"
 grep -qxF "$linetoadd" .bashrc|| echo "$linetoadd" >> .bashrc
+source .bashrc
 echo "  ...done"
 
 #
@@ -97,6 +98,12 @@ systemctl --user daemon-reload
 systemctl --user restart docker
 sleep 1
 echo "  ...done"
+
+#
+echo "* Enabling docker.service on system startup..."
+loginctl enable-linger $(id -un) 2>/dev/null >/dev/null
+echo "  ...done."
+
 
 #loginctl show-session $XDG_SESSION_ID
 #docker run hello-world
