@@ -16,7 +16,7 @@ If everything goes well, an 'OK' message is printed at the end of the script.
 ./docker-userinit.sh
 ```
 If everything goes well, an 'OK' message is printed at the end of the script.
-IMPORTANT NOTE: in order to execut the docker-userinit.sh on another user,
+IMPORTANT NOTE: in order to execute the docker-userinit.sh on another user,
 it is necessary to actually create a login session (e.g., via ssh or machinectl):
 somethink like 'su - <user>' and then docker-userinit.sh will not work!
 
