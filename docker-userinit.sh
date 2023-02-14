@@ -23,7 +23,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 ##########################################################################
-VERSION="221203"
+VERSION="230214"
 
 [ "$1" = "-d" ] && DEBUG="1"
 #sudo apt -y install docker-ce-rootless-extras docker-ce uidmap xpdf exfat-fuse slirp slirp4netns
@@ -88,8 +88,8 @@ echo "  ...done"
 #
 echo "* Adding DOCKER_HOST to .bashrc"
 linetoadd="export DOCKER_HOST=unix:///run/user/\$(id -u)/docker.sock"
-grep -qxF "$linetoadd" .bashrc|| echo "$linetoadd" >> .bashrc
-source .bashrc
+grep -qxF "$linetoadd" ~/.bashrc|| echo "$linetoadd" >> ~/.bashrc
+source ~/.bashrc
 echo "  ...done"
 
 #
